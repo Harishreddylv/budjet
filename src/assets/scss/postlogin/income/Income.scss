@@ -1,0 +1,44 @@
+.income-container {
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+.add-income {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+
+    button {
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}
+
+.income-list-container {
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.row-item-container {
+    width: 100%;
+    height: 100%;
+}
+
+.item-row {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    background: #eeee;
+    border-bottom: 0.2px solid #d7d4d4;
+
+}
+
+.income-edit-btn,
+.income-delete-btn {
+    margin: 0px 5px;
+    cursor: pointer;
+}

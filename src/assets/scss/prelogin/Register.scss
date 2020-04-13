@@ -1,0 +1,39 @@
+@import './partials/mixins';
+@import './partials/extend';
+
+.register-container {
+
+    @extend .full-height-width;
+
+    .register-section {
+        @extend .full-height-width;
+        @extend .flex-justify-center;
+
+        .register-form {
+            padding: 10px;
+            background: lightcyan;
+            min-width: 300px;
+            max-width: 300px;
+
+            .input-group {
+                @include flex();
+                flex-direction: column;
+
+                label {
+                    margin: 10px 0px;
+                }
+
+                input {
+
+                    padding: 10px;
+                }
+            }
+
+            .button-section {
+                @extend .flex-justify-center;
+                padding: 10px 0px;
+            }
+
+        }
+    }
+}

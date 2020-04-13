@@ -1,0 +1,26 @@
+@import '../partials/extend';
+@import '../partials/mixins';
+
+.home-container {
+    @extend .full-height-width;
+    background: lightgray;
+
+    .home-header {
+        width: 100%;
+        height: 50px;
+        background: #009688;
+        @extend .flex-justify-between;
+    }
+
+    .home-body {
+        width: 100%;
+        height: calc(100% - 100px);
+        background: #fff;
+    }
+
+    .home-footer {
+        width: 100%;
+        height: 50px;
+        background: #009688;
+    }
+}

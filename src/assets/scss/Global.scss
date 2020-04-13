@@ -1,0 +1,31 @@
+@import '../scss/prelogin/Login.scss';
+@import '../scss/prelogin/Register.scss';
+
+
+@import '../scss/postlogin/Home.scss';
+@import '../scss/postlogin/Menu.scss';
+@import '../scss/postlogin/income/Income.scss';
+@import '../scss/postlogin/income/AddIncome.scss';
+
+
+@import './partials/extend';
+@import './partials/mixins';
+
+
+html,
+body,
+#root,
+.App {
+
+    @extend .full-height-width;
+    padding: 0px;
+    margin: 0px;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-margin {
+    margin: 0px !important;
+}

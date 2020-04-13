@@ -1,0 +1,50 @@
+@import './partials/mixins';
+@import './partials/extend';
+
+.login-container {
+
+    @extend .full-height-width;
+
+    .login-section {
+        @extend .full-height-width;
+        @extend .flex-justify-center;
+
+        .login-form {
+            padding: 10px;
+            background: lightcyan;
+            min-width: 300px;
+            max-width: 300px;
+
+            .input-group {
+                @include flex();
+                flex-direction: column;
+
+                label {
+                    margin: 10px 0px;
+                }
+
+                input {
+
+                    padding: 10px;
+                }
+            }
+
+            .button-section {
+                @extend .flex-justify-between;
+                padding: 10px 0px;
+            }
+
+            .register-link {
+                @extend .flex-justify-center;
+
+                .register-btn {
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    border-bottom: 1px solid blue;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

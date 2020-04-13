@@ -1,0 +1,23 @@
+@import '../partials/extend';
+@import '../partials/mixins';
+
+.menu-container{
+    width: 100%;
+    height: 30px;
+    @extend .flex-justify-start;
+    background: #0096888c;
+
+    div{
+        padding:5px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    div:hover{
+        color: #fff;
+    }
+    .active {
+
+        color:#fff;
+    }
+    
+}
